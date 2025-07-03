@@ -7,7 +7,7 @@ service:
   name: demoservice     
   port: 80
   targetPort: 80
-  type: LoadBalancer
+  type: ClusterIP
 
 container:
   name: demoapp         
