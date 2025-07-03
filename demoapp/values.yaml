@@ -1,0 +1,18 @@
+replicaCount: 2
+
+appLabel: demo          
+deployment:
+  name: demodeploy      
+service:
+  name: demoservice     
+  port: 80
+  targetPort: 80
+
+container:
+  name: demoapp         
+  port: 80
+
+image:
+  repo: demoapp         # gets replaced
+  tag: latest           # gets replaced
+  pullPolicy: IfNotPresent
