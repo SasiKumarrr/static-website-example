@@ -11,6 +11,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: demoapp-svc
+                name: {{ .Values.service.name }}
                 port:
-                  number: 80
+                  number: {{ .Values.service.port }}
